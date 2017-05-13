@@ -67,10 +67,14 @@ $( document ).ready(function(){
 
       var stopper = setInterval(randomizeBoxes, 100);
       setTimeout(function () {
+
+        // $(".tip").html(showTip);
+
         clearInterval(stopper);
+
       }, 3000);
 
-      $(".tip").fadeIn(0).delay(5000).html(showTip);
+      $(".tip").html(showTip);
       $('.buttonholder').hide();
 
     // $( ".tip" ).hide();
